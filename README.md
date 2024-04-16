@@ -21,7 +21,7 @@ sub2BTN.setOnClickListener{
             val Page2 = Intent(this, sub1::class.java)
             startActivity(Page2)
         }
-```
+
 
 4. In the xml file
    - Change to RelativeLayout
