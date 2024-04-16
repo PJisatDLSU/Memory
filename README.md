@@ -4,13 +4,22 @@ This is a flashcard application. It follows a Tree-Root Graph with subjects at t
 
 THIS IS A WORK IN PROGRESS APP, ALWAYS UPDATING FROM MAY-AUGUST
 
-## To Add Subjects 
-1. Copy paste this to the MainActivity.kt
-
+## To Add Subjects
+1. Setting Up Button
+   - Set ID tag for the button
+   - ex: subject1
+2. Create a Page
+   - Right click on App
+   - New>Activity>Empty Views Activity
+   - Name file
+   - ex: sub1
+3. Copy paste this to the MainActivity.kt
 ```kotlin
 val sub1BTN =findViewById<Button>(R.id.subject1)
 sub2BTN.setOnClickListener{
-            val Page2 = Intent(this, sub2::class.java)
+            val Page2 = Intent(this, sub1::class.java)
             startActivity(Page2)
         }
+- Be sure to edit the necessary changes such as tag and page link
+
 
