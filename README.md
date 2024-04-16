@@ -25,57 +25,7 @@ sub2BTN.setOnClickListener{
 
 4. In the xml file
    - Change to RelativeLayout
-   - Copy and Edit this code based on your preferred appearance
-     ```kotlin
-     <LinearLayout
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/purple"
-        android:gravity="center"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="10dp"
-            android:fontFamily="@font/akaya_telivigala"
-            android:gravity="center"
-            android:text="Subject 2"
-            android:textColor="@color/white"
-            android:textSize="32sp"
-            android:textStyle="bold" />
-    </LinearLayout>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/header">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="vertical">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/akaya_telivigala"
-                android:gravity="center"
-                android:layout_marginTop="25dp"
-                android:text="Quiz 1"
-                android:textSize="24sp"
-                android:textStyle="bold" />
-            <Button
-                android:id="@+id/lesson1"
-                android:layout_width="400dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="5dp"
-                android:background="@drawable/rectangle"
-                android:text="Lesson 1"
-                android:textColor="@color/black"
-                app:backgroundTint="@color/gray" />
-        </LinearLayout>
-    </ScrollView>
-```
+   - Copy and Edit this code from previous activity_sub1.xml
 
 ## To Add Lessons
 1. Setting Up Button
