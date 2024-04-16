@@ -46,7 +46,7 @@ sub2BTN.setOnClickListener{
    import androidx.appcompat.app.AppCompatActivity
    import androidx.core.view.ViewCompat
    import androidx.core.view.WindowInsetsCompat```
-- CODE, adjust the tag and file name to the correct one
+- CODE - adjust the tag and file name to the correct one
    ```kotlin
    val l1 = findViewById<Button>(R.id.lesson1)
    
@@ -54,4 +54,21 @@ sub2BTN.setOnClickListener{
                val Page1 = Intent(this, sub2_lesson1::class.java)
                startActivity(Page1)
            }```
+
+4. Adding the Questions and Answers
+- Inside the sub2_lesson1 file that you created, copy the code from previous subx_lessonx.kt file
+- Change the follows:
+  - Database for the Questions and Answer
+    ```kotlin
+    private val table = arrayOf(
+        arrayOf(1, "What is the fullname of PJ?", "Philip Jeremiah Caleon"),
+        arrayOf(2, "How old is he right now (2024)?", "23"),
+        arrayOf(3, "What is 9 + 10?", "21")
+    )
+
+    private val database = mutableListOf("1", "2", "3")```
+   - The title of the page
+     ```kotlin
+     topicTitle.text = "Lesson 1" // adjust this```
+     
 
