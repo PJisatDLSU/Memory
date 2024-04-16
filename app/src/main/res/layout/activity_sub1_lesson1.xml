@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sub1_lesson1">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:gravity="center"
+            android:text="Lesson 1"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@id/header">
+
+        <Button
+            android:id="@+id/question"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle"
+            android:hint="Question"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/yellow" />
+
+        <Button
+            android:id="@+id/answer"
+            android:layout_width="400dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/rectangle"
+            android:hint="Answer"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/green" />
+    </LinearLayout>
+
+</RelativeLayout>

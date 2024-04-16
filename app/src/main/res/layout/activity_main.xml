@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@color/purple"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:gravity="center"
+            android:text="Choose CourseWork"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:gravity="center"
+            android:text="May - August "
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/subject1"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectangle"
+                android:text="Subject 1"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/gray" />
+            <Button
+                android:id="@+id/subject2"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:background="@drawable/rectangle"
+                android:text="Subject 2"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/gray"
+                android:layout_marginTop="5dp"/>
+            <Button
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:background="@drawable/rectangle"
+                android:text="[No Subject]"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/gray"
+                android:layout_marginTop="5dp"/>
+            <Button
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                android:background="@drawable/rectangle"
+                android:text="[No Subject]"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/gray"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
