@@ -46,7 +46,7 @@ sub2BTN.setOnClickListener{
    import androidx.appcompat.app.AppCompatActivity
    import androidx.core.view.ViewCompat
    import androidx.core.view.WindowInsetsCompat```
-   - CODE, adjust the tag and file name to the correct one
+- CODE, adjust the tag and file name to the correct one
 ```kotlin
 val l1 = findViewById<Button>(R.id.lesson1)
 
