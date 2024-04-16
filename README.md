@@ -15,13 +15,12 @@ THIS IS A WORK IN PROGRESS APP, ALWAYS UPDATING FROM MAY-AUGUST
    - ex: sub1
 3. Copy paste this to the MainActivity.kt
    - Be sure to edit the necessary changes such as tag and page link
-```kotlin
-val sub1BTN =findViewById<Button>(R.id.subject1)
-sub2BTN.setOnClickListener{
-            val Page2 = Intent(this, sub1::class.java)
-            startActivity(Page2)
-        }
-```
+   ```kotlin
+   val sub1BTN =findViewById<Button>(R.id.subject1)
+   sub2BTN.setOnClickListener{
+               val Page2 = Intent(this, sub1::class.java)
+               startActivity(Page2)
+           }
 
 4. In the xml file
    - Change to RelativeLayout
@@ -53,7 +52,7 @@ sub2BTN.setOnClickListener{
            l1.setOnClickListener{
                val Page1 = Intent(this, sub2_lesson1::class.java)
                startActivity(Page1)
-           }```
+           }
 
 4. Adding the Questions and Answers
 - Inside the sub2_lesson1 file that you created, copy the code from previous subx_lessonx.kt file
@@ -66,9 +65,9 @@ sub2BTN.setOnClickListener{
         arrayOf(3, "What is 9 + 10?", "21")
     )
 
-    private val database = mutableListOf("1", "2", "3")```
+    private val database = mutableListOf("1", "2", "3")
    - The title of the page
      ```kotlin
-     topicTitle.text = "Lesson 1" // adjust this```
+     topicTitle.text = "Lesson 1" 
      
 
