@@ -75,7 +75,7 @@ sub2BTN.setOnClickListener{
                 app:backgroundTint="@color/gray" />
         </LinearLayout>
     </ScrollView>
-    ```
+```
 
 ## To Add Lessons
 1. Setting Up Button
