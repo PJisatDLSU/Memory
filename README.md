@@ -19,7 +19,8 @@ val sub1BTN =findViewById<Button>(R.id.subject1)
 sub2BTN.setOnClickListener{
             val Page2 = Intent(this, sub1::class.java)
             startActivity(Page2)
-        }'''
+        }
+```
 - Be sure to edit the necessary changes such as tag and page link
 
 
