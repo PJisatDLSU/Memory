@@ -20,8 +20,7 @@ val sub1BTN =findViewById<Button>(R.id.subject1)
 sub2BTN.setOnClickListener{
             val Page2 = Intent(this, sub1::class.java)
             startActivity(Page2)
-        }
-```
+        }```
 4. In the xml file
    - Change to RelativeLayout
    - Copy and Edit this code based on your preferred appearance
@@ -94,12 +93,12 @@ sub2BTN.setOnClickListener{
    - IMPORTS
    ```kotlin
    import android.content.Intent
-import android.os.Bundle
-import android.widget.Button
-import androidx.activity.enableEdgeToEdge
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat```
+   import android.os.Bundle
+   import android.widget.Button
+   import androidx.activity.enableEdgeToEdge
+   import androidx.appcompat.app.AppCompatActivity
+   import androidx.core.view.ViewCompat
+   import androidx.core.view.WindowInsetsCompat```
    - CODE, adjust the tag and file name to the correct one
 ```kotlin
 val l1 = findViewById<Button>(R.id.lesson1)
