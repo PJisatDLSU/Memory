@@ -37,7 +37,7 @@ sub2BTN.setOnClickListener{
    - Name file
    - ex: sub2_lesson1
 3. Copy paste this to the subject.kt
-   - IMPORTS
+- IMPORTS
    ```kotlin
    import android.content.Intent
    import android.os.Bundle
@@ -47,12 +47,11 @@ sub2BTN.setOnClickListener{
    import androidx.core.view.ViewCompat
    import androidx.core.view.WindowInsetsCompat```
 - CODE, adjust the tag and file name to the correct one
-```kotlin
-val l1 = findViewById<Button>(R.id.lesson1)
-
-        l1.setOnClickListener{
-            val Page1 = Intent(this, sub2_lesson1::class.java)
-            startActivity(Page1)
-        }
-```
+   ```kotlin
+   val l1 = findViewById<Button>(R.id.lesson1)
+   
+           l1.setOnClickListener{
+               val Page1 = Intent(this, sub2_lesson1::class.java)
+               startActivity(Page1)
+           }```
 
