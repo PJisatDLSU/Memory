@@ -14,6 +14,7 @@ THIS IS A WORK IN PROGRESS APP, ALWAYS UPDATING FROM MAY-AUGUST
    - Name file
    - ex: sub1
 3. Copy paste this to the MainActivity.kt
+   - Be sure to edit the necessary changes such as tag and page link
 ```kotlin
 val sub1BTN =findViewById<Button>(R.id.subject1)
 sub2BTN.setOnClickListener{
@@ -21,6 +22,90 @@ sub2BTN.setOnClickListener{
             startActivity(Page2)
         }
 ```
-- Be sure to edit the necessary changes such as tag and page link
+4. In the xml file
+   - Change to RelativeLayout
+   - Copy and Edit this code based on your preferred appearance
+     ```kotlin
+     <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple"
+        android:gravity="center"
+        android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/akaya_telivigala"
+            android:gravity="center"
+            android:text="Subject 2"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/akaya_telivigala"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:text="Quiz 1"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/lesson1"
+                android:layout_width="400dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/rectangle"
+                android:text="Lesson 1"
+                android:textColor="@color/black"
+                app:backgroundTint="@color/gray" />
+
+        </LinearLayout>
+    </ScrollView>```
+
+## To Add Lessons
+1. Setting Up Button
+   - Set ID for the button
+   - ex: lesson1
+2. Create a Page
+   - Right click on App
+   - New>Activity>Empty Views Activity
+   - Name file
+   - ex: sub2_lesson1
+3. Copy paste this to the subject.kt
+   - IMPORTS
+   ```kotlin
+   import android.content.Intent
+import android.os.Bundle
+import android.widget.Button
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat```
+   - CODE, adjust the tag and file name to the correct one
+```kotlin
+val l1 = findViewById<Button>(R.id.lesson1)
+
+        l1.setOnClickListener{
+            val Page1 = Intent(this, sub2_lesson1::class.java)
+            startActivity(Page1)
+        }```
 
